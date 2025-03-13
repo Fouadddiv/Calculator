@@ -1,9 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Digital-7+Mono&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: black;
-    color: white;
     font-family: Arial, sans-serif;
 }
 
@@ -13,6 +13,8 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-color: black;
+    color: white;
 }
 
 .title {
@@ -22,6 +24,7 @@ body {
     padding: 10px 20px;
     margin-bottom: 20px;
     border-radius: 5px;
+    font-weight: bold;
 }
 
 .calk {
@@ -31,48 +34,65 @@ body {
     align-items: center;
 }
 
+/* شاشة الحاسبة */
 .Screen {
     width: 320px;
     height: 100px;
-    padding-top: 1em;
-    background-color: #fff;
     display: flex;
     justify-content: center;
-    margin-bottom: 0px;
+    align-items: center;
+    background-color: black;
+    border: 3px solid #0f0;
+    box-shadow: 0 0 15px #0f0;
+    margin-bottom: 10px;
+    border-radius: 8px;
 }
 
+/* شكل الأرقام بأسلوب Seven-Segment */
 .Screen1 {
     width: 250px;
-    height: 50px;
-    background-color: aqua;
-    color: #000;
+    height: 60px;
+    background-color: black;
+    color: #33ff33; /* أخضر مضيء */
     text-align: right;
     padding: 10px;
-    font-size: 1.5em;
-    border: solid black 10px;
-    border-radius: 5px;
+    font-size: 2.5em;
+    font-family: 'Digital-7 Mono', sans-serif;
+    border: none;
 }
 
+/* تحسين تصميم الأزرار */
 .but {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
-    background-color: aquamarine;
+    background-color: rgba(0, 255, 128, 0.2);
     padding: 20px;
     border-radius: 10px;
 }
 
+/* أزرار التحكم */
 .button {
-    width: 60px;
-    height: 60px;
-    font-size: 1.2em;
+    width: 70px;
+    height: 70px;
+    font-size: 1.5em;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
-    background-color: #000;
+    background-color: #222;
     color: #fff;
+    box-shadow: 0 4px #0f0;
+    transition: all 0.2s;
 }
 
 .button:hover {
-    background-color: #ddd;
+    background-color: #0f0;
+    color: black;
 }
+
+.button:active {
+    box-shadow: 0 2px #0f0;
+    transform: translateY(2px);
+}
+
+
