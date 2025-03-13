@@ -104,4 +104,7 @@ font-weight: bold;
 .button:focus{
     outline: none;
 }
-.button:focusno(:hover)
+.button:focusno(:hover){
+    background-color: #222;
+    color: white;
+}
