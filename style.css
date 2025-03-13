@@ -81,18 +81,27 @@ body {
     cursor: pointer;
     background-color: #222;
     color: #fff;
-    box-shadow: 0 4px #0f0;
+    box-shadow: 2px 4px #0f0;
     transition: all 0.2s;
 }
 
 .button:hover {
     background-color: #0f0;
     color: black;
+font-weight: bold;
 }
-
 .button:active {
     box-shadow: 0 2px #0f0;
     transform: translateY(2px);
 }
 
 
+.button:hover{
+    background-color: #0f0;
+    color: black;
+}
+
+.button:focus{
+    outline: none;
+}
+.button:focusno(:hover)
