@@ -33,7 +33,9 @@ if (!screen || buttons.length === 0) {
         });
 
         // تحسين التوافق مع قارئات الشاشة
-        button.setAttribute('aria-label', button.textContent);
+        if (!button.hasAttribute('aria-label')) {
+            button.setAttribute('aria-label', button.textContent);
+        }
     });
 
     function clearCalculator() {
